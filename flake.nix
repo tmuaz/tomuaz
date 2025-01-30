@@ -16,6 +16,7 @@
               jdk # jdk 21
               (pkgs.writeShellScriptBin "init" ''
                 #!/usr/bin/env bash
+                set -e
                 cd frontendexample
                 bun install
                 cd ../springdemo 
@@ -23,18 +24,7 @@
               '')
             ];
 
-            buildInputs = [
-              /* zstd
-              alsa-lib
-              libxkbcommon
-              udev
-              vulkan-loader
-              wayland
-              xorg.libX11
-              xorg.libXcursor
-              xorg.libXi
-              xorg.libXrandr */
-            ];
+            buildInputs = [];
 
           };
       });
