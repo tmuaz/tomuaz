@@ -1,5 +1,5 @@
 {
-  description = "Bevy flake";
+  description = "React + Spring boot flake";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
   inputs.flake-utils.url = "github:numtide/flake-utils";
